@@ -14,6 +14,17 @@
         <br>
         <button type="submit" class="submit">Create Board</button>
       </form>
+      
+      <ul class="main-list">
+        <% boardList.forEach(function(boardItem) { %>
+        <li class="main-list__item">
+          <div class="board">
+            <p class="board__title"><%= boardItem.title %></p>
+            <p class="board_date"><%= boardItem.created_at %></p>
+          </div>
+        </li>
+        <% }); %>
+      </ul>
     </div>
 
   </body>
