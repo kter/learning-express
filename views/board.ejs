@@ -10,6 +10,10 @@
 <body>
 <div class="wrapper">
     <p class="main-title"><%= title %></p>
+    <form action="/boards/<%= board.board_id %>" method="post" class="board-form">
+        <input type="text" name="message" class="input" required>
+        <button type="submit" class="submit">Post</button>
+    </form>
     <a href="/" class="btn">トップへもどる</a>
 </div>
 </body>
